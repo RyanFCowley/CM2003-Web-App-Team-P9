@@ -1,76 +1,114 @@
 
 
 
-/* The container <div> - needed to position the dropdown content */
-.burialdropdown {
-    position: relative;
-    display: inline-block;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
 }
 
-.battledropdown {
-    position: relative;
-    display: inline-block;
+li {
+  float: left;
+  color: #DAF0EE;
+  border-right: 1px solid #6B0504;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.burialdropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+li:last_child {
+  border-right: none;
 }
 
-.battledropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+li a, .battledropdown {
+  display: inline-block;
+  color: #DAF0EE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Links inside the dropdown */
-.burialdropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+li a, .burialdropdown {
+  display: inline-block;
+  color: #DAF0EE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.battledropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+/*-----------------------------------------------------------------------------*/
+/* change color when you hover over toolbar */
+li a:hover, .AncientBurialdropdown:hover .burialdropdown {
+  background-color: #6B0504;
 }
 
 
-/* Change color of dropdown links on hover */
-.burialdropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.burialdropdown:hover .burialdropdown-content {
-    display: block;
+li a:hover, .AncientBattledropdown:hover .battledropdown {
+  background-color: #6B0504;
 }
 
-.battledropdown-content a:hover {background-color: #f1f1f1}
+/*-----------------------------------------------------------------------------*/
 
-/* Show the dropdown menu on hover */
-.burialdropdown:hover .burialdropdown-content {
-    display: block;
+li.AncientBurialdropdown {
+  display: inline-block;
 }
 
-.battledropdown:hover .battledropdown-content {
-    display: block;
+li.AncientBattledropdown{
+  display: inline-block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.burialdropdown:hover {
-    background-color: #3e8e41;
+/*-----------------------------------------------------------------------------*/
+.battledropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #6B0504;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.battledropdown:hover {
-    background-color: #3e8e41;
+.burialdropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #6B0504;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*-----------------------------------------------------------------------------*/
+.battledropdown-content a{
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.burialdropdown-content a{
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*-----------------------------------------------------------------------------*/
+.burialdropdown-content a:hover{
+  background-color: #000000;
+}
+
+.battledropdown-content a:hover{
+  background-color: #000000;
+}
+/*-----------------------------------------------------------------------------*/
+.AncientBurialdropdown:hover .burialdropdown-content{
+  display:block;
+}
+
+.AncientBattledropdown:hover .battledropdown-content{
+  display:block;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.active {
+  background-color: #6B0504;
 }
