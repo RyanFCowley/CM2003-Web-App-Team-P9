@@ -9,6 +9,7 @@
 	font-family:"Arial Black", Gadget, sans-serif;
 	color:#42C0FB;
 	text-shadow: 0 0 0.5em #ffffff,0 0 0.5em #ffffff;
+	padding-left: 40px;
 }
 
 #input[type=text] {
