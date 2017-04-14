@@ -1,52 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>HomelyOrHaunted</title>
-<!--This links the css file-->
-<link rel="stylesheet" href="main.css" type="text/css" />
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HomelyOrHaunted</title>
+    <!--CSS file-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    
+    <!-- leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
-<!-- leaflet stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <!-- vendor scripts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Leaflet Script -->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
-<!-- vendor scripts -->
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-<!-- Leaflet Script -->
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  </head>
+  
+  <body id="index" class="home">
+    <!--Fixed to the top left of the screen-->
+    <div id = "titleblock">
+      <h2 id = "title">Homely Or Haunted?</h2>
+      <input type="text" name="search" placeholder="Search..."></input>
+    </div>
+    
+    <!--this is where the map will go, right now its a placeholder-->
+    <article>
+      <div id = "mapid"></div>
+    </article>
+    
+    <!--An invisible checkbox to recieve the click-->
+    <div id="menuToggle">
+      <input id="button"type="checkbox"/>
+    	<!--Spans to act as the hamburger-->
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    	<!--The side menu to be pulled in when the hamburger is pressed-->
+      <ul id="sidemenu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
 
-</head>
-
-<body id="index" class="home">
-
-<div id = "titleblock">
-<h2 id = "title">Homely Or Haunted?</h2>
-<input type="text" name="search" placeholder="Search..."></input>
-
-</div>
-
-
-<!--this is where the map will go, right now its a placeholder-->
-<article>
-<div id = "mapid"></div>
-</article>
-
-<div id="menuToggle">
-	<input id="button"type="checkbox"/>
-
-	<span></span>
-	<span></span>
-	<span></span>
-
-<div id="sideMenu">
-	</div>
-</div>
-
-
-<!-- jquery and my scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="main.js"></script>
+    </div>
+    
+    <!-- jquery and my scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="main.js"></script>
 
 
-</body>
+  </body>
 
 </html>

@@ -29,6 +29,10 @@
 	z-index:-1;
 }
 
+#mapid { 
+  height: 1000px;
+}
+
 #menuToggle{
 
 	display:block;
@@ -101,4 +105,26 @@
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#mapid { height: 1000px; }
+#sidemenu{
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	margin: -100px 0 0 -50px;
+	padding: 50px;
+	padding-top: 125px;
+
+	background: #ffffff;
+	opacity: 0.5;
+
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: transform 2s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#sidemenu li{
+	padding: 10px 0px 20px 0px;
+}
+
+#menuToggle input:checked ~ ul{
+	transform: scale(1.0, 1.0);
+}
